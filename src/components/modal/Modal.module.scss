@@ -1,0 +1,14 @@
+@import "../../globalVariables.scss";
+.wrapper {
+  padding: 70px 80px 50px;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+  width: 500px;
+  background-color: $secondary-color;
+  box-shadow: 0 20px 40px -5px rgba(#111, 0.3);
+  border-radius: 10px;
+  position: fixed;
+  // display: flex;
+}

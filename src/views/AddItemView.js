@@ -1,10 +1,10 @@
 import React from "react";
-import ProductForm from "components/Forms/ProductForm";
+import Modal from "components/modal/Modal";
 
-const AddItemView = () => {
+const AddItemView = ({ add }) => {
   return (
     <>
-      <ProductForm />
+      <Modal add />
     </>
   );
 };

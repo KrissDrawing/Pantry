@@ -7,11 +7,17 @@ const CardList = ({ products, cart }) => {
     ? products.filter((item) => +item.amount < +item.limit)
     : products;
   return (
-    <ul className={styles.wrapper}>
-      {filteredProducts.map((product) => (
-        <Card key={product.uid} {...product} />
-      ))}
-    </ul>
+    <>
+      {filteredProducts.length === 0 ? (
+        <h2 className={styles.empty}>nothing here</h2>
+      ) : (
+        <ul className={styles.wrapper}>
+          {filteredProducts.map((product) => (
+            <Card key={product.uid} {...product} />
+          ))}
+        </ul>
+      )}
+    </>
   );
 };
 

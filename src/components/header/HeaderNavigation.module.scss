@@ -1,0 +1,9 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  justify-items: center;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: rgb(115, 130, 168);
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.5);
+}

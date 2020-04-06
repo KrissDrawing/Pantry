@@ -1,3 +1,4 @@
+@import "../../globalVariables.scss";
 .button {
   display: block;
   font-size: 10px;
@@ -5,8 +6,8 @@
   padding: 7px 12px;
   font-weight: 500;
   background: none;
-  border: 2px solid #1e58ff;
-  color: #1e58ff;
+  border: 2px solid $base-color;
+  color: $base-color;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -15,7 +16,7 @@
   @extend .button;
 
   width: 120px;
-  background-color: #1e58ff;
+  background-color: $base-color;
   color: white;
   font-weight: 700;
   font-size: 0.8em;
